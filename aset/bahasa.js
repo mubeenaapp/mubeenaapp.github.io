@@ -9,6 +9,7 @@
     document.querySelectorAll('.bhs button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.set === l));
     const t = document.querySelector(`meta[name="judul-${l}"]`);
     if (t) document.title = t.content;
+    document.dispatchEvent(new CustomEvent('bahasa', { detail: l }));
   };
   pasang(awal);
   addEventListener('DOMContentLoaded', () => {

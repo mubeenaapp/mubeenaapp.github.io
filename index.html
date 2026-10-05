@@ -2,60 +2,321 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mubeena AI: Quran Memorization</title>
 <meta name="judul-en" content="Mubeena AI: Quran Memorization">
 <meta name="judul-id" content="Mubeena: Hafal Al-Qur'an dengan AI">
-<meta name="description" content="Read, listen, repeat and recite your Quran memorization. AI on your iPhone listens and marks every word.">
+<meta name="description" content="Read, listen, repeat, check your memorization with AI and see your progress on a memorization map. The AI runs on your iPhone: private, no account, works offline.">
+<meta name="theme-color" content="#0f3d2e">
+<meta property="og:title" content="Mubeena AI: Quran Memorization">
+<meta property="og:description" content="Every step of memorizing the Quran in one app. AI on your iPhone checks every word.">
+<meta property="og:image" content="https://mubeenaapp.github.io/aset/icon-512.png">
 <link rel="icon" href="aset/icon-192.png">
-<link rel="stylesheet" href="aset/gaya.css">
+<link rel="apple-touch-icon" href="aset/icon-192.png">
+<link rel="stylesheet" href="aset/beranda.css">
 <script src="aset/bahasa.js"></script>
+<script src="aset/beranda.js"></script>
 </head>
 <body>
-<header><div class="atas">
-  <a class="merek" href="./"><img class="ikon" src="aset/icon-192.png" alt=""><img class="tulisan" src="aset/mubeena-tulisan.png" alt="Mubeena"></a>
+
+<!-- ===== Bilah atas ===== -->
+<header class="nav"><div class="wadah">
+  <a class="merek" href="#atas"><img class="ikon" src="aset/icon-192.png" alt=""><img class="tulisan" src="aset/mubeena-tulisan.png" alt="Mubeena"></a>
+  <nav class="nav-tautan">
+    <a href="#alur"><span data-lang="en">How it works</span><span data-lang="id">Cara kerja</span></a>
+    <a href="#privasi"><span data-lang="en">Privacy</span><span data-lang="id">Privasi</span></a>
+    <a href="#harga"><span data-lang="en">Pricing</span><span data-lang="id">Harga</span></a>
+    <a href="#tanya"><span data-lang="en">FAQ</span><span data-lang="id">Tanya jawab</span></a>
+  </nav>
   <div class="bhs" role="group" aria-label="Language"><button data-set="en">EN</button><button data-set="id">ID</button></div>
+  <a class="tombol emas" href="#unduh"><span data-lang="en">Get the app</span><span data-lang="id">Dapatkan</span></a>
 </div></header>
 
-<main>
-<!-- ===== English ===== -->
-<div data-lang="en">
-  <h1>Your Quran memorization companion</h1>
-  <p class="lead">Read, listen, repeat and recite from memory. An AI on your iPhone listens and marks every word, so you
-    know exactly which parts are fluent and which need more review.</p>
-  <ul class="fitur">
-    <li><b>Read</b> · the full mushaf with translation and coloured bookmarks.</li>
-    <li><b>Listen</b> · reciters, with repeats per ayah or range and a pause to repeat after them.</li>
-    <li><b>Repeat</b> · set a range and a target; count each reading yourself, or let the AI count for you.</li>
-    <li><b>Check</b> · memorization check: recite from memory, and the AI marks every word and chimes on a mistake.</li>
-    <li><b>Map</b> · see your memorization in colour on every page, surah and juz.</li>
-  </ul>
-  <p class="kecil">Private by design: the AI runs on your device, your voice never leaves it, and there are no accounts
-    or ads.</p>
-  <p><b>Coming soon to the App Store for iPhone.</b></p>
-</div>
+<!-- ===== Hero ===== -->
+<section class="hero" id="atas"><div class="wadah">
+  <div class="muncul">
+    <div class="lencana"><b>AI</b><span data-lang="en">Runs on your iPhone, not in the cloud</span><span data-lang="id">Berjalan di iPhone Anda, bukan di server</span></div>
+    <h1>
+      <span data-lang="en">Memorize the Quran. <em>AI checks every word.</em></span>
+      <span data-lang="id">Hafal Al-Qur'an, <em>diperiksa AI kata demi kata.</em></span>
+    </h1>
+    <p class="sub">
+      <span data-lang="en">Read, listen, repeat, then recite from memory while the AI listens and marks every word. See your progress on a
+        memorization map. Every step of memorizing, in one app.</span>
+      <span data-lang="id">Baca, dengar, takrir, lalu setor hafalan sementara AI menyimak dan menandai setiap kata. Lihat kemajuan Anda di
+        peta hafalan. Seluruh proses menghafal, dalam satu aplikasi.</span>
+    </p>
+    <div class="aksi">
+      <a class="tombol emas" href="#unduh">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+        <span class="dua"><small><span data-lang="en">Coming soon to the</span><span data-lang="id">Segera hadir di</span></small>App Store</span></a>
+      <a class="tombol hantu" href="#alur"><span data-lang="en">See how it works</span><span data-lang="id">Lihat cara kerjanya</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    </div>
+    <ul class="percaya">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-lang="en">No account</span><span data-lang="id">Tanpa akun</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-lang="en">No ads</span><span data-lang="id">Tanpa iklan</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-lang="en">Works offline</span><span data-lang="id">Bisa tanpa internet</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-lang="en">Free to start</span><span data-lang="id">Gratis untuk mulai</span></li>
+    </ul>
+  </div>
+  <div class="panggung">
+    <div class="hp belakang" aria-hidden="true"><img class="layar" data-n="peta" src="aset/layar/en/peta.jpg" alt=""></div>
+    <div class="hp depan"><img class="layar" data-n="setor" src="aset/layar/en/setor.jpg" alt="Mubeena memorization check"></div>
+    <div class="chip c1"><span class="bulat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+      <span><span data-lang="en">48 words correct</span><span data-lang="id">48 kata benar</span><small><span data-lang="en">An-Naba 1-16</span><span data-lang="id">An-Naba 1-16</span></small></span></div>
+    <div class="chip c2"><span class="bulat"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22a2.5 2.5 0 0 0 2.4-2h-4.8A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5-6.7V3a2 2 0 1 0-4 0v1.3A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg></span>
+      <span><span data-lang="en">Mistake caught</span><span data-lang="id">Salah langsung ditandai</span><small><span data-lang="en">with a soft chime</span><span data-lang="id">dengan denting lembut</span></small></span></div>
+  </div>
+</div></section>
 
-<!-- ===== Bahasa Indonesia ===== -->
-<div data-lang="id">
-  <h1>Teman menghafal Al-Qur'an</h1>
-  <p class="lead">Baca, dengar, ulangi, dan setor hafalan. AI di iPhone Anda menyimak dan menandai setiap kata, jadi Anda
-    tahu persis bagian mana yang sudah lancar dan mana yang perlu diulang.</p>
-  <ul class="fitur">
-    <li><b>Baca</b> · mushaf lengkap dengan terjemahan dan penanda berwarna.</li>
-    <li><b>Dengar</b> · bacaan qari, diulang per ayat atau per rentang, dengan jeda untuk menirukan.</li>
-    <li><b>Takrir</b> · tentukan rentang dan target; hitung sendiri setiap bacaan, atau biarkan AI yang menghitung.</li>
-    <li><b>Setor</b> · baca dari hafalan; AI menandai setiap kata dan berdenting bila ada yang salah.</li>
-    <li><b>Peta</b> · lihat hafalan Anda berwarna di setiap halaman, surah, dan juz.</li>
-  </ul>
-  <p class="kecil">Menjaga privasi: AI berjalan di perangkat Anda, suara Anda tidak pernah keluar dari HP, tanpa akun dan
-    tanpa iklan.</p>
-  <p><b>Segera hadir di App Store untuk iPhone.</b></p>
-</div>
-</main>
+<!-- ===== Tiga keunggulan ===== -->
+<section class="unggul"><div class="wadah">
+  <div class="kartu3">
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+      <h3><span data-lang="en">AI trained on Quran recitation</span><span data-lang="id">AI khusus bacaan Al-Qur'an</span></h3>
+      <p><span data-lang="en">A speech model trained specifically on Quran recitation follows you word by word and catches wrong, skipped and added words.</span>
+        <span data-lang="id">Model AI yang dilatih khusus bacaan Al-Qur'an menyimak kata demi kata dan menangkap kata yang salah, terlewat, atau ditambah.</span></p>
+    </div>
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h3><span data-lang="en">Private by design</span><span data-lang="id">Privasi terjaga</span></h3>
+      <p><span data-lang="en">The AI runs directly on your iPhone. Your voice never leaves your phone. No account, no ads, no tracking.</span>
+        <span data-lang="id">AI berjalan langsung di iPhone Anda. Suara Anda tidak pernah keluar dari HP. Tanpa akun, tanpa iklan, tanpa pelacak.</span></p>
+    </div>
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 7h20v5H2z"/><path d="M12 21V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+      <h3><span data-lang="en">Free to start</span><span data-lang="id">Gratis untuk mulai</span></h3>
+      <p><span data-lang="en">Read, Listen, Repeat and Map are free forever, and so is memorization check for Al-Fatihah and selected surahs of Juz 30.</span>
+        <span data-lang="id">Baca, Dengar, Takrir, dan Peta gratis selamanya, begitu juga Setor untuk Al-Fatihah dan surah pilihan Juz 30.</span></p>
+    </div>
+  </div>
+</div></section>
 
-<footer>
-  <nav><a href="support.html"><span data-lang="en">Support</span><span data-lang="id">Bantuan</span></a><a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="id">Privasi</span></a><a href="mailto:hi.mubeena@gmail.com">hi.mubeena@gmail.com</a></nav>
-  © 2026 Dedi Kurniawan
-</footer>
+<!-- ===== Alur 5 langkah ===== -->
+<section class="alur" id="alur"><div class="wadah">
+  <div class="kepala muncul">
+    <div class="label"><span data-lang="en">How it works</span><span data-lang="id">Cara kerja</span></div>
+    <h2><span data-lang="en">Every step of memorizing, in one app</span><span data-lang="id">Seluruh proses menghafal, dalam satu aplikasi</span></h2>
+    <p><span data-lang="en">From reading the page to locking it in your memory: five steps that follow how a hafiz actually memorizes.</span>
+      <span data-lang="id">Dari membaca halaman sampai melekat di hafalan: lima langkah yang mengikuti cara seorang penghafal menghafal.</span></p>
+  </div>
+  <div class="langkah-pil muncul">
+    <a href="#l1"><span>1</span><b data-lang="en">Read</b><b data-lang="id">Baca</b></a>
+    <a href="#l2"><span>2</span><b data-lang="en">Listen</b><b data-lang="id">Dengar</b></a>
+    <a href="#l3"><span>3</span><b data-lang="en">Repeat</b><b data-lang="id">Takrir</b></a>
+    <a href="#l4"><span>4</span><b data-lang="en">Check</b><b data-lang="id">Setor</b></a>
+    <a href="#l5"><span>5</span><b data-lang="en">Map</b><b data-lang="id">Peta</b></a>
+  </div>
+
+  <article class="langkah" id="l1">
+    <div class="teks muncul">
+      <div class="no"><span>1</span><b data-lang="en">Read</b><b data-lang="id">Baca</b></div>
+      <h3><span data-lang="en">Read with translation and bookmarks</span><span data-lang="id">Baca dengan terjemahan dan penanda</span></h3>
+      <p><span data-lang="en">The complete Madinah mushaf, beautifully set, with a translation one tap away.</span>
+        <span data-lang="id">Mushaf Madinah lengkap dengan tampilan yang indah, terjemahannya cukup sekali ketuk.</span></p>
+      <ul class="centang">
+        <li><span data-lang="en">Madinah mushaf (Hafs) with English and Indonesian translation</span><span data-lang="id">Mushaf Madinah (riwayat Hafs) dengan terjemahan Indonesia dan Inggris</span></li>
+        <li><span data-lang="en">Coloured bookmarks with your own names, like "New memorization"</span><span data-lang="id">Penanda berwarna dengan nama sendiri, seperti "Hafalan baru"</span></li>
+        <li><span data-lang="en">Juz 1 and 30 included; other juz download once and work offline</span><span data-lang="id">Juz 1 dan 30 sudah ada; juz lain diunduh sekali lalu bisa tanpa internet</span></li>
+      </ul>
+    </div>
+    <div class="visual muncul"><div class="hp"><img class="layar" data-n="baca" src="aset/layar/en/baca.jpg" alt="" loading="lazy"></div></div>
+  </article>
+
+  <article class="langkah" id="l2">
+    <div class="teks muncul">
+      <div class="no"><span>2</span><b data-lang="en">Listen</b><b data-lang="id">Dengar</b></div>
+      <h3><span data-lang="en">Listen until it feels familiar</span><span data-lang="id">Dengar sampai terasa akrab</span></h3>
+      <p><span data-lang="en">Let the recitation settle in your ears before you start memorizing.</span>
+        <span data-lang="id">Biarkan bacaannya akrab di telinga sebelum mulai menghafal.</span></p>
+      <ul class="centang">
+        <li><span data-lang="en">Five renowned reciters, including Al-Husary and Mishary Alafasy</span><span data-lang="id">Lima qari ternama, termasuk Al-Husary dan Mishary Alafasy</span></li>
+        <li><span data-lang="en">Repeat each ayah or a whole range, or nonstop</span><span data-lang="id">Ulangi tiap ayat atau satu rentang, atau terus-menerus</span></li>
+        <li><span data-lang="en">A pause after each ayah to repeat after the reciter</span><span data-lang="id">Jeda sesudah tiap ayat untuk menirukan qari</span></li>
+      </ul>
+    </div>
+    <div class="visual muncul"><div class="hp"><img class="layar" data-n="dengar" src="aset/layar/en/dengar.jpg" alt="" loading="lazy"></div></div>
+  </article>
+
+  <article class="langkah" id="l3">
+    <div class="teks muncul">
+      <div class="no"><span>3</span><b data-lang="en">Repeat</b><b data-lang="id">Takrir</b></div>
+      <h3><span data-lang="en">Repeat until it sticks</span><span data-lang="id">Takrir sampai hafal</span></h3>
+      <p><span data-lang="en">Set a range and a target, then read it again and again. Never lose count.</span>
+        <span data-lang="id">Tentukan rentang dan target, lalu baca berulang-ulang. Tidak pernah lupa hitungan.</span></p>
+      <ul class="centang">
+        <li><span data-lang="en">Press +1 each time you finish the range</span><span data-lang="id">Tekan +1 setiap selesai membaca rentangnya</span></li>
+        <li><span data-lang="en">Or let the AI listen and count for you</span><span data-lang="id">Atau biarkan AI menyimak dan menghitungkannya</span><span class="pro-kecil">PRO</span></li>
+        <li><span data-lang="en">Memorization mode hides the text; tap to peek</span><span data-lang="id">Mode hafalan menyembunyikan teks; ketuk untuk mengintip</span></li>
+      </ul>
+    </div>
+    <div class="visual muncul"><div class="hp"><img class="layar" data-n="takrir" src="aset/layar/en/takrir.jpg" alt="" loading="lazy"></div></div>
+  </article>
+
+  <article class="langkah" id="l4">
+    <div class="teks muncul">
+      <div class="no"><span>4</span><b data-lang="en">Check</b><b data-lang="id">Setor</b></div>
+      <h3><span data-lang="en">Recite from memory. The AI checks every word.</span><span data-lang="id">Setor hafalan. AI memeriksa setiap kata.</span></h3>
+      <p><span data-lang="en">Recite as you would to your teacher. Mubeena listens and marks each word the moment you say it.</span>
+        <span data-lang="id">Baca seperti saat setoran kepada guru. Mubeena menyimak dan menandai setiap kata saat itu juga.</span></p>
+      <ul class="centang">
+        <li><span data-lang="en">Green when correct, red with a soft chime when wrong, skipped or added</span><span data-lang="id">Hijau bila benar, merah dengan denting lembut bila salah, terlewat, atau tambahan</span></li>
+        <li><span data-lang="en">Corrected yourself after a pause? Marked orange, not wrong</span><span data-lang="id">Berhenti lalu membetulkan sendiri? Ditandai jingga, bukan salah</span></li>
+        <li><span data-lang="en">Repeating an ayah to get it right is not a mistake</span><span data-lang="id">Mengulang ayat agar lancar tidak dihitung salah</span></li>
+        <li><span data-lang="en">A clear summary; tap a mistake to find it in the mushaf</span><span data-lang="id">Ringkasan yang jelas; ketuk kesalahan untuk melihatnya di mushaf</span></li>
+      </ul>
+    </div>
+    <div class="visual ganda muncul">
+      <div class="hp"><img class="layar" data-n="setor" src="aset/layar/en/setor.jpg" alt="" loading="lazy"></div>
+      <div class="hp"><img class="layar" data-n="hasil" src="aset/layar/en/hasil.jpg" alt="" loading="lazy"></div>
+    </div>
+  </article>
+
+  <article class="langkah" id="l5">
+    <div class="teks muncul">
+      <div class="no"><span>5</span><b data-lang="en">Map</b><b data-lang="id">Peta</b></div>
+      <h3><span data-lang="en">See your memorization, mapped in colour</span><span data-lang="id">Lihat hafalan Anda, berwarna di peta</span></h3>
+      <p><span data-lang="en">Every check you save colours the mushaf, so you always know what to review next.</span>
+        <span data-lang="id">Setiap setoran yang disimpan mewarnai mushaf, jadi Anda selalu tahu apa yang perlu diulang berikutnya.</span></p>
+      <ul class="centang">
+        <li><span data-lang="en">Fluent, needs review, or not yet recited, word by word</span><span data-lang="id">Lancar, perlu diulang, atau belum disetor, kata demi kata</span></li>
+        <li><span data-lang="en">Progress per surah and per juz across the whole Quran</span><span data-lang="id">Kemajuan per surah dan per juz di seluruh Al-Qur'an</span></li>
+        <li><span data-lang="en">Updated every time you recite</span><span data-lang="id">Diperbarui setiap kali Anda menyetor</span></li>
+      </ul>
+    </div>
+    <div class="visual muncul"><div class="hp"><img class="layar" data-n="peta" src="aset/layar/en/peta.jpg" alt="" loading="lazy"></div></div>
+  </article>
+</div></section>
+
+<!-- ===== Privasi ===== -->
+<section class="privasi" id="privasi"><div class="wadah">
+  <div class="kepala muncul">
+    <div class="label"><span data-lang="en">Privacy</span><span data-lang="id">Privasi</span></div>
+    <h2><span data-lang="en">Your voice stays on your phone</span><span data-lang="id">Suara Anda tetap di HP Anda</span></h2>
+    <p><span data-lang="en">Your recitation is personal. Mubeena keeps it that way.</span>
+      <span data-lang="id">Bacaan Anda adalah hal pribadi. Mubeena menjaganya tetap begitu.</span></p>
+  </div>
+  <div class="kartu3">
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+      <h3><span data-lang="en">AI on your device</span><span data-lang="id">AI di perangkat Anda</span></h3>
+      <p><span data-lang="en">Recognition runs entirely on your iPhone. Recordings are never uploaded and are not kept after checking.</span>
+        <span data-lang="id">Pengenalan bacaan berjalan sepenuhnya di iPhone. Rekaman tidak pernah diunggah dan tidak disimpan setelah diperiksa.</span></p>
+    </div>
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg></div>
+      <h3><span data-lang="en">No account, no ads</span><span data-lang="id">Tanpa akun, tanpa iklan</span></h3>
+      <p><span data-lang="en">No sign-up, no analytics, no tracking. Your memorization map lives only on your phone.</span>
+        <span data-lang="id">Tanpa daftar, tanpa analitik, tanpa pelacakan. Peta hafalan Anda hanya tersimpan di HP Anda.</span></p>
+    </div>
+    <div class="kartu muncul">
+      <div class="ik"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.6a10 10 0 0 1 14 0M8.5 16.4a5 5 0 0 1 7 0"/><path d="M12 20h.01"/><path d="M3 3l18 18"/></svg></div>
+      <h3><span data-lang="en">Works offline</span><span data-lang="id">Bisa tanpa internet</span></h3>
+      <p><span data-lang="en">Memorization check works without internet, at the masjid, on the train, anywhere.</span>
+        <span data-lang="id">Setor tetap jalan tanpa internet: di masjid, di kereta, di mana saja.</span></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===== Harga ===== -->
+<section id="harga"><div class="wadah">
+  <div class="kepala muncul">
+    <div class="label"><span data-lang="en">Pricing</span><span data-lang="id">Harga</span></div>
+    <h2><span data-lang="en">Start free. Go further with Pro.</span><span data-lang="id">Mulai gratis. Lebih jauh dengan Pro.</span></h2>
+    <p><span data-lang="en">One simple yearly plan. No ads, ever.</span><span data-lang="id">Satu paket tahunan yang sederhana. Tanpa iklan, selamanya.</span></p>
+  </div>
+  <div class="harga-kartu">
+    <div class="paket muncul">
+      <h3><span data-lang="en">Free</span><span data-lang="id">Gratis</span></h3>
+      <div class="nominal"><span data-lang="en">$0</span><span data-lang="id">Rp 0</span></div>
+      <div class="ket"><span data-lang="en">Forever</span><span data-lang="id">Selamanya</span></div>
+      <ul class="centang">
+        <li><span data-lang="en">Read: full mushaf, translation, bookmarks</span><span data-lang="id">Baca: mushaf lengkap, terjemahan, penanda</span></li>
+        <li><span data-lang="en">Listen: five reciters with repeat and pause</span><span data-lang="id">Dengar: lima qari dengan ulangan dan jeda</span></li>
+        <li><span data-lang="en">Repeat with manual count</span><span data-lang="id">Takrir dengan hitungan manual</span></li>
+        <li><span data-lang="en">Check: Al-Fatihah, An-Naba, An-Nazi'at, At-Takathur to An-Nas</span><span data-lang="id">Setor: Al-Fatihah, An-Naba, An-Nazi'at, At-Takatsur sampai An-Nas</span></li>
+        <li><span data-lang="en">Memorization map</span><span data-lang="id">Peta hafalan</span></li>
+      </ul>
+    </div>
+    <div class="paket pro muncul">
+      <div class="pita"><span data-lang="en">1-week free trial</span><span data-lang="id">Uji coba gratis 1 minggu</span></div>
+      <h3><span class="bintang"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.3 6.2 6.2 2.3-6.2 2.3L12 19.5l-2.3-6.2L3.5 11l6.2-2.3z" fill="currentColor"/></svg></span>Mubeena Pro</h3>
+      <div class="nominal"><span data-lang="en">$29.99 <small>/ year</small></span><span data-lang="id">Rp 149.000 <small>/ tahun</small></span></div>
+      <div class="ket"><span data-lang="en">US price; local prices vary by country</span><span data-lang="id">Harga Indonesia; tiap negara bisa berbeda</span></div>
+      <ul class="centang">
+        <li><span data-lang="en">Everything in Free</span><span data-lang="id">Semua yang ada di Gratis</span></li>
+        <li><span data-lang="en">Repeat counted automatically by AI</span><span data-lang="id">Takrir dihitung otomatis oleh AI</span></li>
+        <li><span data-lang="en">Memorization check for all 114 surahs</span><span data-lang="id">Setor hafalan seluruh 114 surah</span></li>
+        <li><span data-lang="en">Memorization map for the whole Quran</span><span data-lang="id">Peta hafalan seluruh Al-Qur'an</span></li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===== Tanya jawab ===== -->
+<section id="tanya" style="padding-top:0"><div class="wadah">
+  <div class="kepala muncul">
+    <div class="label"><span data-lang="en">FAQ</span><span data-lang="id">Tanya jawab</span></div>
+    <h2><span data-lang="en">Questions, answered</span><span data-lang="id">Pertanyaan yang sering diajukan</span></h2>
+  </div>
+  <div class="tanya muncul">
+    <details>
+      <summary><span data-lang="en">Does Mubeena replace my teacher?</span><span data-lang="id">Apakah Mubeena menggantikan guru?</span></summary>
+      <p><span data-lang="en">No. Mubeena helps you practise between lessons, so you come to your teacher better prepared. Your teacher remains the
+        best judge of your recitation.</span>
+        <span data-lang="id">Tidak. Mubeena membantu Anda berlatih di antara pertemuan, supaya Anda datang ke guru dengan hafalan yang lebih siap.
+        Guru tetap penilai terbaik bacaan Anda.</span></p>
+    </details>
+    <details>
+      <summary><span data-lang="en">How accurate is the AI?</span><span data-lang="id">Seberapa akurat AI-nya?</span></summary>
+      <p><span data-lang="en">The AI is trained specifically on Quran recitation and catches wrong, skipped and added words. It can still mishear,
+        especially children's voices or in noisy places, so you can tap any word to see what the AI heard.</span>
+        <span data-lang="id">AI dilatih khusus bacaan Al-Qur'an dan menangkap kata yang salah, terlewat, atau ditambah. AI tetap bisa salah dengar,
+        terutama pada suara anak-anak atau di tempat bising, jadi setiap kata bisa diketuk untuk melihat apa yang didengar AI.</span></p>
+    </details>
+    <details>
+      <summary><span data-lang="en">Do I need an internet connection?</span><span data-lang="id">Apakah perlu internet?</span></summary>
+      <p><span data-lang="en">No for the memorization check: the AI runs on your iPhone. Listening to reciters streams over the internet, and juz
+        other than 1 and 30 download once the first time you open them.</span>
+        <span data-lang="id">Untuk Setor tidak perlu: AI berjalan di iPhone Anda. Mendengarkan qari memerlukan internet, dan juz selain 1 dan 30
+        diunduh sekali saat pertama dibuka.</span></p>
+    </details>
+    <details>
+      <summary><span data-lang="en">Which phones are supported?</span><span data-lang="id">HP apa saja yang didukung?</span></summary>
+      <p><span data-lang="en">iPhone with iOS 17 or later. An Android version is planned.</span>
+        <span data-lang="id">iPhone dengan iOS 17 atau lebih baru. Versi Android sedang direncanakan.</span></p>
+    </details>
+    <details>
+      <summary><span data-lang="en">How do I cancel Mubeena Pro?</span><span data-lang="id">Bagaimana membatalkan Mubeena Pro?</span></summary>
+      <p><span data-lang="en">Any time in iPhone Settings › your name › Subscriptions. You keep Pro until the end of the period you paid for.</span>
+        <span data-lang="id">Kapan saja di Pengaturan iPhone › nama Anda › Langganan. Pro tetap aktif sampai akhir masa yang sudah dibayar.</span></p>
+    </details>
+  </div>
+</div></section>
+
+<!-- ===== Ajakan penutup ===== -->
+<section class="ajakan" id="unduh"><div class="wadah">
+  <div class="bingkai muncul">
+    <img class="ikon-besar" src="aset/icon-512.png" alt="">
+    <h2><span data-lang="en">Begin your memorization journey</span><span data-lang="id">Mulai perjalanan hafalan Anda</span></h2>
+    <p><span data-lang="en">Mubeena is coming soon to the App Store for iPhone. Free to download, free to start.</span>
+      <span data-lang="id">Mubeena segera hadir di App Store untuk iPhone. Gratis diunduh, gratis untuk mulai.</span></p>
+    <a class="tombol emas" href="mailto:hi.mubeena@gmail.com?subject=Mubeena">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      <span data-lang="en">Tell me when it's live</span><span data-lang="id">Kabari saya saat rilis</span></a>
+  </div>
+</div></section>
+
+<footer><div class="wadah">
+  <a class="merek" href="#atas" style="color:var(--tinta)"><img class="ikon" src="aset/icon-192.png" alt=""><b>Mubeena</b></a>
+  <nav>
+    <a href="support.html"><span data-lang="en">Support</span><span data-lang="id">Bantuan</span></a>
+    <a href="privacy.html"><span data-lang="en">Privacy</span><span data-lang="id">Privasi</span></a>
+    <a href="mailto:hi.mubeena@gmail.com">hi.mubeena@gmail.com</a>
+  </nav>
+  <div>© <span id="tahun">2026</span> Dedi Kurniawan</div>
+</div></footer>
 </body>
 </html>
