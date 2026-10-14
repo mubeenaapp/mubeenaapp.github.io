@@ -55,17 +55,22 @@
   <h2>Internet connections</h2>
   <p>The app connects to the internet only to:</p>
   <ul>
-    <li>play reciters' audio, streamed from QuranicAudio (through the Quran.com service) and EveryAyah.com;</li>
+    <li>download the Quran text and mushaf layout from Quran Foundation (Quran.com) once, when you first open the app,
+      and check for corrections every few days;</li>
+    <li>play reciters' audio, streamed from QuranicAudio through the Quran.com service, with the timing of each ayah;</li>
     <li>play a short recitation by Mishary Alafasy when you get stuck or make a mistake while reciting, and in the
       Continue-the-ayah test, streamed from Quran.com together with the timing of each word;</li>
     <li>download the mushaf font of a juz that is not yet on your phone, from Quran.com or the Quranic Universal Library
       (QUL), once per juz.</li>
   </ul>
+  <p>Requests for Quran Foundation data and timings pass through Mubeena's own server, hosted on Cloudflare, because
+    Quran Foundation requires apps to keep their access key on a server. The server only forwards these requests; it
+    stores nothing and receives no personal information.</p>
   <p>Like any website, these providers can see your device's internet (IP) address when the app connects to them. Their
     own privacy policies apply: <a href="https://quran.com/privacy">Quran.com (Quran Foundation, also for QuranicAudio)</a>,
-    <a href="https://tarteel.ai/privacy">Tarteel (Quranic Universal Library)</a>; EveryAyah.com has no published privacy
-    policy. Mubeena does not send them any personal information. The Quran text and other public content are fetched
-    without sending any personal data.</p>
+    <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>,
+    <a href="https://tarteel.ai/privacy">Tarteel (Quranic Universal Library)</a>. Mubeena does not send them any personal
+    information. The Quran text and other public content are fetched without sending any personal data.</p>
 
   <h2>Purchases</h2>
   <p>The optional Mubeena Pro subscription is sold and managed by Apple through the App Store (iPhone) or by Google
@@ -137,16 +142,21 @@
   <h2>Sambungan internet</h2>
   <p>Aplikasi tersambung ke internet hanya untuk:</p>
   <ul>
-    <li>memutar suara qari dari QuranicAudio (melalui layanan Quran.com) dan EveryAyah.com;</li>
+    <li>mengunduh teks Al-Qur'an dan tata letak mushaf dari Quran Foundation (Quran.com) sekali, saat aplikasi pertama
+      dibuka, lalu memeriksa koreksi setiap beberapa hari;</li>
+    <li>memutar suara qari dari QuranicAudio melalui layanan Quran.com, beserta waktu tiap ayat;</li>
     <li>memutar potongan bacaan Mishary Alafasy saat Anda lupa atau salah ketika setor/takrir, dan pada Tes sambung
       ayat, dari Quran.com beserta waktu tiap kata;</li>
     <li>mengunduh huruf mushaf untuk juz yang belum ada di HP Anda, dari Quran.com atau Quranic Universal Library (QUL),
       sekali untuk setiap juz.</li>
   </ul>
+  <p>Permintaan data dan waktu bacaan Quran Foundation melewati server Mubeena sendiri di Cloudflare, karena Quran
+    Foundation mewajibkan aplikasi menyimpan kunci aksesnya di server. Server ini hanya meneruskan permintaan tersebut;
+    tidak menyimpan apa pun dan tidak menerima data pribadi.</p>
   <p>Seperti situs web pada umumnya, penyedia tersebut dapat melihat alamat internet (IP) perangkat Anda saat aplikasi
     tersambung. Kebijakan privasi mereka sendiri berlaku: <a href="https://quran.com/privacy">Quran.com (Quran Foundation,
-    juga untuk QuranicAudio)</a>, <a href="https://tarteel.ai/privacy">Tarteel (Quranic Universal Library)</a>; EveryAyah.com
-    tidak memuat kebijakan privasi. Mubeena tidak mengirimkan data pribadi apa pun kepada mereka. Teks Al-Qur'an dan isi
+    juga untuk QuranicAudio)</a>, <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>,
+    <a href="https://tarteel.ai/privacy">Tarteel (Quranic Universal Library)</a>. Mubeena tidak mengirimkan data pribadi apa pun kepada mereka. Teks Al-Qur'an dan isi
     umum lainnya diambil tanpa mengirim data pribadi.</p>
 
   <h2>Pembelian</h2>
