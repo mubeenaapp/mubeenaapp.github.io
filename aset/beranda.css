@@ -144,6 +144,21 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; letter-spacing: -0.
 .paket .nominal small { font-size: 15px; font-weight: 600; color: var(--redup); letter-spacing: 0; }
 .paket .ket { color: var(--redup); font-size: 14px; margin: 6px 0 22px; }
 
+.banding { max-width: 860px; margin: 32px auto 0; scroll-margin-top: 84px; }
+.banding h3 { margin: 0 0 14px; font-size: 19px; text-align: center; }
+.banding table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--kartu); border: 1px solid var(--garis); border-radius: 16px; overflow: hidden; font-size: 14.5px; }
+.banding th, .banding td { padding: 11px 14px; border-bottom: 1px solid var(--garis); text-align: left; font-weight: 500; }
+.banding tbody tr:last-child th, .banding tbody tr:last-child td { border-bottom: 0; }
+.banding thead th { font-weight: 800; }
+.banding td, .banding thead th:not(:first-child) { width: 25%; text-align: center; color: var(--redup); }
+.banding .k-pro { background: var(--hijau-lembut); color: var(--tinta); font-weight: 700; }
+.banding thead .k-pro { color: var(--hijau); }
+.banding .ya { color: var(--hijau); font-weight: 800; }
+.banding .sub th { background: var(--bg-2); color: var(--redup); font-size: 12.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 8px 14px; }
+.gratis-16 { max-width: 760px; margin: 14px auto 0; color: var(--redup); font-size: 14px; line-height: 1.55; }
+.gratis-16 b { color: var(--tinta); }
+@media (max-width: 560px) { .banding table { font-size: 13.5px; } .banding th, .banding td { padding: 10px 9px; } .banding td, .banding thead th:not(:first-child) { width: 24%; } }
+
 /* Tanya jawab */
 .tanya { max-width: 760px; margin: 0 auto; display: grid; gap: 10px; }
 .tanya details { background: var(--kartu); border: 1px solid var(--garis); border-radius: 14px; padding: 2px 20px; }
