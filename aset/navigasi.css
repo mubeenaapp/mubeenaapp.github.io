@@ -1,0 +1,32 @@
+/* Navigasi semua halaman situs (31 Okt 2026): bilah atas menempel, menu burger ke tiap bagian, tombol kembali ke atas. */
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+header:not(.nav) { position: sticky; top: 0; z-index: 50; }
+.nv-tombol { flex: none; width: 40px; height: 40px; display: grid; place-items: center; padding: 0; border: 1px solid var(--garis); border-radius: 12px;
+  background: var(--kartu); color: var(--tinta); cursor: pointer; }
+.nv-tombol svg { display: block; }
+.nv-tombol .x { display: none; }
+.nv-tombol[aria-expanded="true"] .x { display: block; }
+.nv-tombol[aria-expanded="true"] .tiga { display: none; }
+.nv-panel { position: fixed; z-index: 60; top: var(--nv-atas, 72px); right: max(12px, calc((100vw - 760px) / 2)); width: min(340px, calc(100vw - 24px));
+  max-height: calc(100dvh - var(--nv-atas, 72px) - 16px); overflow-y: auto; overscroll-behavior: contain; padding: 8px; border: 1px solid var(--garis); border-radius: 16px;
+  background: var(--bg); box-shadow: 0 18px 44px -14px rgba(10, 30, 22, .38); font-size: 15px; line-height: 1.35; }
+.nv-panel[hidden] { display: none; }
+.nv-panel h2 { margin: 8px 10px 4px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--redup); }
+.nv-panel ul { list-style: none; margin: 0; padding: 0; }
+.nv-panel li { margin: 0; }
+.nv-panel a { display: block; padding: 10px; border-radius: 10px; color: var(--tinta); font-weight: 600; text-decoration: none; }
+.nv-panel a:hover { background: var(--kartu); }
+.nv-panel a.kini, .nv-panel a[aria-current] { color: var(--aksen, var(--hijau)); background: color-mix(in srgb, var(--hijau) 12%, transparent); }
+.nv-panel .pemisah { height: 1px; margin: 8px 10px; background: var(--garis); }
+#keAtas { position: fixed; z-index: 40; right: max(16px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); width: 46px; height: 46px;
+  display: grid; place-items: center; padding: 0; border: 1px solid rgba(255, 255, 255, .22); border-radius: 50%; background: #1f6f54; color: #fff; cursor: pointer;
+  box-shadow: 0 10px 24px -8px rgba(10, 30, 22, .55); opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .18s, transform .18s, visibility .18s; }
+#keAtas.tampak { opacity: 1; visibility: visible; transform: none; }
+.nv-tombol:focus-visible, .nv-panel a:focus-visible, #keAtas:focus-visible { outline: 2px solid var(--aksen, var(--hijau)); outline-offset: 2px; }
+/* Beranda layar lebar sudah punya tautan di bilah atas. */
+@media (min-width: 761px) { .nav .nv-tombol { display: none; } }
+@media (max-width: 760px) { .nav .wadah { gap: 10px; } }
+@media (max-width: 360px) { .atas .tulisan, .nav .tulisan { width: 84px; } .bhs button { padding: 4px 8px; } }
+@media (prefers-reduced-motion: reduce) { #keAtas { transition: none; } }
+@media print { .nv-tombol, .nv-panel, #keAtas { display: none !important; } }
