@@ -9,6 +9,8 @@
 <meta name="description" content="Step-by-step guide to Mubeena AI: Quran Memorization, with pictures from the app showing what to tap.">
 <link rel="icon" href="aset/icon-192.png">
 <link rel="stylesheet" href="aset/gaya.css">
+<link rel="stylesheet" href="aset/navigasi.css">
+<script src="aset/navigasi.js" defer></script>
 <script src="aset/bahasa.js"></script>
 <style>
   /* Panduan langkah demi langkah (15 Okt 2026). Dibuat oleh ios/alat/panduan_buat.mjs: jangan diubah dengan tangan,
@@ -54,7 +56,7 @@
   .tanda { flex: none; min-width: 112px; text-align: center; font-weight: 700; font-size: 14px; padding: 3px 10px; border-radius: 8px; }
   .t-ok { color: var(--ok); background: var(--ok-bg); } .t-bad { color: var(--bad); background: var(--bad-bg); }
   .t-fix { color: var(--fix); background: var(--fix-bg); } .t-hint { color: var(--hint); background: var(--hint-bg); }
-  .t-lafal { color: var(--lafal); background: var(--lafal-bg); }
+  .t-lafal { color: var(--ok); background: var(--ok-bg); text-decoration: underline dotted 2px; text-underline-offset: 4px; }
   .t-cek { color: var(--redup); text-decoration: underline dotted 2px; text-underline-offset: 5px; }
   @media (max-width: 700px) {
     .langkah { grid-template-columns: minmax(0, 1fr); grid-template-areas: "kepala" "hp" "nomor"; grid-template-rows: none; row-gap: 14px; }
@@ -80,6 +82,7 @@
     <ul>
       <li>Saat pertama dibuka, sambungkan ke internet: data Al-Qur'an diunduh sekali, sekitar 5 MB.</li>
       <li>Izinkan <b>mikrofon</b> saat diminta. Suara Anda diperiksa AI langsung di HP dan tidak dikirim ke mana pun. AI-nya bekerja tanpa internet; suara qari perlu internet.</li>
+      <li>Kalau earphone Bluetooth tersambung, aplikasi bertanya mau memakai mic yang mana. Suara qari tetap keluar di earphone.</li>
       <li>Angka di gambar menunjukkan tombol yang diketuk. Ketuk gambar untuk melihatnya lebih besar.</li>
     </ul>
   </div>
@@ -88,15 +91,14 @@
     <h2>📱 Layar utama</h2>
     <div class="langkah">
       <div class="kepala"><h3>Kenali tombol-tombolnya</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/utama.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/utama.jpg" alt="Kenali tombol-tombolnya" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.05%;top:7.01%;width:64.54%;height:4.81%;--kl:3.17%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:77.05%;top:7.01%;width:10.45%;height:4.81%"><b>3</b></span><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>4</b></span><span class="tk" style="left:5.12%;top:13.08%;width:89.77%;height:70.79%"><b>5</b></span><span class="tk luar" style="left:2.05%;top:84.94%;width:89.54%;height:4.98%;--kl:2.29%"><b>6</b></span><span class="tk luar" style="left:0.5%;top:90.25%;width:99%;height:9.45%;--kl:0.51%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/utama.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/utama.jpg" alt="Kenali tombol-tombolnya" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.05%;top:7.01%;width:75%;height:4.81%;--kl:2.73%"><b>1</b></span><span class="tk kecil" style="left:77.05%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>3</b></span><span class="tk" style="left:5.12%;top:13.08%;width:89.77%;height:70.79%"><b>4</b></span><span class="tk luar" style="left:2.05%;top:84.94%;width:89.54%;height:4.98%;--kl:2.29%"><b>5</b></span><span class="tk luar" style="left:0.5%;top:90.25%;width:99%;height:9.45%;--kl:0.51%"><b>6</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span><b>Cari surah atau juz</b>: ketik nama surah atau pilih juz.</span></li>
-        <li><b class="no">2</b><span><b>Pergi ke</b>: langsung ke ayat atau halaman tertentu.</span></li>
-        <li><b class="no">3</b><span><b>Penanda</b>: daftar tempat yang Anda tandai.</span></li>
-        <li><b class="no">4</b><span><b>Pengaturan</b>: bahasa, mode malam, cadangan data, panduan singkat.</span></li>
-        <li><b class="no">5</b><span><b>Halaman mushaf</b>: geser ke kanan untuk halaman berikutnya, ke kiri untuk halaman sebelumnya. Ketuk sebuah ayat untuk pilihan ayat itu.</span></li>
-        <li><b class="no">6</b><span><b>Baris tombol</b> untuk menu yang sedang dibuka. Di Baca: penanda yang ada di halaman ini.</span></li>
-        <li><b class="no">7</b><span><b>Lima menu</b>: Baca, Dengar, Takrir, Setor, Peta.</span></li>
+        <li><b class="no">1</b><span><b>Cari</b>: surah, juz, ayat, atau halaman.</span></li>
+        <li><b class="no">2</b><span><b>Penanda</b>: daftar tempat yang Anda tandai.</span></li>
+        <li><b class="no">3</b><span><b>Pengaturan</b>: bahasa, mode malam, cadangan data, panduan singkat.</span></li>
+        <li><b class="no">4</b><span><b>Halaman mushaf</b>: geser ke kanan untuk halaman berikutnya, ke kiri untuk halaman sebelumnya. Ketuk sebuah ayat untuk pilihan ayat itu.</span></li>
+        <li><b class="no">5</b><span><b>Baris tombol</b> untuk menu yang sedang dibuka. Di Baca: penanda yang ada di halaman ini.</span></li>
+        <li><b class="no">6</b><span><b>Lima menu</b>: Baca, Dengar, Takrir, Setor, Peta.</span></li>
       </ol>
     </div>
   </section>
@@ -105,16 +107,16 @@
     <h2>🔎 Mencari surah, ayat, atau halaman</h2>
     <div class="langkah">
       <div class="kepala"><h3>Cari surah atau juz</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/cari.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/cari.jpg" alt="Cari surah atau juz" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.36%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5%;top:19.58%;width:81.81%;height:5.21%;--kl:6.11%"><b>2</b></span><span class="tk luar" style="left:3.64%;top:24.79%;width:84.54%;height:6.61%;--kl:4.3%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/cari.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/cari.jpg" alt="Cari surah atau juz" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:19.43%;width:81.81%;height:5.36%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.21%;--kl:6.11%"><b>2</b></span><span class="tk luar" style="left:3.64%;top:25%;width:84.54%;height:6.61%;--kl:4.3%"><b>3</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span>Ketik nama surah atau nomornya. Daftarnya langsung menyaring.</span></li>
-        <li><b class="no">2</b><span>Pilih <b>Surah</b> atau <b>Juz</b>.</span></li>
+        <li><b class="no">1</b><span>Ketik nama surah atau nomornya, dengan ejaan apa pun (Yasin, Ya-Sin). Bisa juga langsung "2:255" atau "hal 300".</span></li>
+        <li><b class="no">2</b><span>Pilih <b>Surah</b>, <b>Juz</b>, <b>Ayat</b>, atau <b>Halaman</b>.</span></li>
         <li><b class="no">3</b><span>Ketuk surahnya untuk membuka halamannya.</span></li>
       </ol>
     </div>
     <div class="langkah">
-      <div class="kepala"><h3>Pergi ke ayat atau halaman</h3><p>Tekan tombol <b>Pergi ke</b> (nomor 2 di layar utama).</p></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/pergi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/pergi.jpg" alt="Pergi ke ayat atau halaman" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:14.09%;top:14.02%;width:81.81%;height:5.21%;--kl:17.22%"><b>1</b></span><span class="tk luar" style="left:14.55%;top:22.81%;width:59.54%;height:5.36%;--kl:24.43%"><b>2</b></span><span class="tk" style="left:14.55%;top:28.17%;width:59.54%;height:30.96%"><b>3</b></span><span class="tk" style="left:75%;top:22.81%;width:20.45%;height:5.36%"><b>4</b></span><span class="tk" style="left:75%;top:28.17%;width:20.45%;height:30.96%"><b>5</b></span><span class="tk luar" style="left:14.55%;top:59.76%;width:80.91%;height:5.23%;--kl:17.98%"><b>6</b></span></a></figure>
+      <div class="kepala"><h3>Pergi ke ayat atau halaman</h3><p>Di panel yang sama, tab <b>Ayat</b> atau <b>Halaman</b>.</p></div>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/pergi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/pergi.jpg" alt="Pergi ke ayat atau halaman" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.21%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5.46%;top:22.81%;width:59.54%;height:5.36%;--kl:9.17%"><b>2</b></span><span class="tk" style="left:5.46%;top:28.17%;width:59.54%;height:30.96%"><b>3</b></span><span class="tk" style="left:65.91%;top:22.81%;width:20.45%;height:5.36%"><b>4</b></span><span class="tk" style="left:65.91%;top:28.17%;width:20.45%;height:30.96%"><b>5</b></span><span class="tk luar" style="left:5.46%;top:59.76%;width:80.91%;height:5.23%;--kl:6.75%"><b>6</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Pilih <b>Ayat</b> atau <b>Halaman</b>.</span></li>
         <li><b class="no">2</b><span>Ketik nama surah, misalnya "baqarah".</span></li>
@@ -164,7 +166,7 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Mengatur yang diputar</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/dengar-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/dengar-atur.jpg" alt="Mengatur yang diputar" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:28.11%;width:93.63%;height:4.92%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:37.24%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:48.12%;width:93.63%;height:4.6%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:56.09%;width:93.63%;height:4.4%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:61.11%;width:93.63%;height:4.8%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:66.53%;width:93.63%;height:4.8%;--kl:3.39%"><b>6</b></span><span class="tk luar" style="left:3.18%;top:71.96%;width:93.63%;height:4.8%;--kl:3.39%"><b>7</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>8</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/dengar-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/dengar-atur.jpg" alt="Mengatur yang diputar" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:27.83%;width:93.63%;height:4.92%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:37.24%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:48.12%;width:93.63%;height:4.6%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:56.09%;width:93.63%;height:4.4%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:61.11%;width:93.63%;height:4.8%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:66.53%;width:93.63%;height:4.8%;--kl:3.39%"><b>6</b></span><span class="tk luar" style="left:3.18%;top:71.96%;width:93.63%;height:4.8%;--kl:3.39%"><b>7</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>8</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Pilih <b>qari</b>.</span></li>
         <li><b class="no">2</b><span><b>Dari</b> dan <b>Sampai</b>: ketuk nama surah atau nomor ayat untuk memilihnya.</span></li>
@@ -223,7 +225,7 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Pengaturan Takrir</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/takrir-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/takrir-atur.jpg" alt="Pengaturan Takrir" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:20.43%;width:93.63%;height:10.25%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:31.31%;width:93.63%;height:4.6%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:39.27%;width:93.63%;height:4.8%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:44.7%;width:93.63%;height:4.8%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:50.13%;width:93.63%;height:4.6%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:55.36%;width:93.63%;height:6.7%;--kl:3.39%"><b>6</b></span><span class="tk" style="left:3.18%;top:62.68%;width:93.63%;height:25.51%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/takrir-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/takrir-atur.jpg" alt="Pengaturan Takrir" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:20.72%;width:93.63%;height:10.25%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:31.59%;width:93.63%;height:4.6%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:39.56%;width:93.63%;height:4.8%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:44.98%;width:93.63%;height:4.8%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:50.41%;width:93.63%;height:4.6%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:55.64%;width:93.63%;height:6.7%;--kl:3.39%"><b>6</b></span><span class="tk" style="left:3.18%;top:62.96%;width:93.63%;height:25.51%"><b>7</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Ayat yang diulang: <b>Dari</b> dan <b>Sampai</b>.</span></li>
         <li><b class="no">2</b><span>Pilihan cepat: <b>Halaman ini</b> atau <b>Surah ini</b>.</span></li>
@@ -269,12 +271,13 @@
     <p>Setor hafalan, disimak AI seperti kepada seorang ustadz.</p>
     <div class="langkah">
       <div class="kepala"><h3>Menu Setor</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/setor.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/setor.jpg" alt="Menu Setor" loading="lazy" width="580" height="1260"><span class="tk" style="left:58.95%;top:90.46%;width:20.63%;height:5.83%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:61.79%;top:84.81%;width:11.36%;height:5.23%"><b>3</b></span><span class="tk" style="left:73.61%;top:84.81%;width:24.34%;height:5.23%"><b>4</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/setor.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/setor.jpg" alt="Menu Setor" loading="lazy" width="580" height="1260"><span class="tk" style="left:58.95%;top:90.46%;width:20.63%;height:5.83%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kiri" style="left:2.05%;top:84.81%;width:37%;height:5.23%"><b>3</b></span><span class="tk kecil" style="left:61.79%;top:84.81%;width:11.36%;height:5.23%"><b>4</b></span><span class="tk" style="left:73.61%;top:84.81%;width:24.34%;height:5.23%"><b>5</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Buka menu <b>Setor</b>.</span></li>
         <li><b class="no">2</b><span><b>Mode hafalan</b>: teks ditutup, untuk setor tanpa melihat.</span></li>
-        <li><b class="no">3</b><span>Pengaturan setoran (bantuan qari, bunyi, Tes sambung ayat).</span></li>
-        <li><b class="no">4</b><span>Tekan <b>Mulai</b>, lalu baca dengan suara jelas dan tempo biasa.</span></li>
+        <li><b class="no">3</b><span>Tombol <b>Tes sambung ayat</b> (lihat di bawah). Muncul selagi belum membaca.</span></li>
+        <li><b class="no">4</b><span>Pengaturan setoran (bantuan qari, bunyi).</span></li>
+        <li><b class="no">5</b><span>Tekan <b>Mulai</b>, lalu baca dengan suara jelas dan tempo biasa.</span></li>
       </ol>
     </div>
     <div class="langkah">
@@ -339,9 +342,9 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Pengaturan setoran</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/setor-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/setor-atur.jpg" alt="Pengaturan setoran" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:40.11%;width:93.63%;height:4.43%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:50%;width:93.63%;height:6.7%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:61.49%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:68.81%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:76.13%;width:93.63%;height:6.7%;--kl:3.39%"><b>5</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/setor-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/setor-atur.jpg" alt="Pengaturan setoran" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:89.55%;top:46.02%;width:7.27%;height:3.35%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:50%;width:93.63%;height:6.7%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:61.49%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:68.81%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:76.13%;width:93.63%;height:6.7%;--kl:3.39%"><b>5</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span><b>Tes sambung ayat</b> (lihat di bawah).</span></li>
+        <li><b class="no">1</b><span>Tombol <b>?</b>: penjelasan singkat menu ini. Ada juga di pengaturan menu lain.</span></li>
         <li><b class="no">2</b><span><b>Bunyi peringatan salah baca</b>.</span></li>
         <li><b class="no">3</b><span><b>Bantuan saat lupa</b>: qari membantu sesudah 5 detik diam.</span></li>
         <li><b class="no">4</b><span><b>Tuntun sesudah salah</b>: qari membacakan yang benar.</span></li>
@@ -354,18 +357,19 @@
     <h2>🧩 Tes sambung ayat</h2>
     <p>Seperti ujian tahfiz: qari membacakan satu ayat acak, Anda melanjutkan dari hafalan.</p>
     <div class="langkah">
-      <div class="kepala"><h3>Menyiapkan tes</h3><p>Buka dari pengaturan Setor › <b>Tes sambung ayat</b>.</p></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/tes-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/tes-atur.jpg" alt="Menyiapkan tes" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:52.07%;width:93.63%;height:12.35%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:65.04%;width:93.63%;height:4.4%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>4</b></span></a></figure>
+      <div class="kepala"><h3>Menyiapkan tes</h3><p>Ketuk <b>Tes sambung ayat</b> di bawah layar, tab Setor.</p></div>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/tes-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/tes-atur.jpg" alt="Menyiapkan tes" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:36.62%;width:93.63%;height:12.35%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:53.95%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:65.04%;width:93.63%;height:4.4%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>5</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Ayat diambil dari: <b>Halaman ini</b>, <b>Surah ini</b>, <b>Juz ini</b>, atau <b>Hafalan di peta</b>.</span></li>
-        <li><b class="no">2</b><span><b>Jumlah soal</b>.</span></li>
-        <li><b class="no">3</b><span><b>Sambungan halaman</b>: soal dari ayat terakhir halaman, untuk melatih menyambung ke halaman berikutnya.</span></li>
-        <li><b class="no">4</b><span>Tekan <b>Mulai tes</b>.</span></li>
+        <li><b class="no">2</b><span>Atau pilih sendiri: <b>Dari</b> surah dan ayat berapa, <b>Sampai</b> surah dan ayat berapa.</span></li>
+        <li><b class="no">3</b><span><b>Jumlah soal</b>.</span></li>
+        <li><b class="no">4</b><span><b>Sambungan halaman</b>: soal dari ayat terakhir halaman, untuk melatih menyambung ke halaman berikutnya.</span></li>
+        <li><b class="no">5</b><span>Tekan <b>Mulai tes</b>.</span></li>
       </ol>
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Menjawab soal</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/tes-soal.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/tes-soal.jpg" alt="Menjawab soal" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:81.31%;top:34.57%;width:12.52%;height:3.72%"><b>1</b></span><span class="tk luar" style="left:2.05%;top:87.32%;width:51.47%;height:2.6%;--kl:3.98%"><b>2</b></span><span class="tk" style="left:70.34%;top:84.81%;width:27.61%;height:5.23%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/tes-soal.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/tes-soal.jpg" alt="Menjawab soal" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:52.79%;top:61.03%;width:6.29%;height:3.72%"><b>1</b></span><span class="tk luar" style="left:2.05%;top:87.32%;width:51.47%;height:2.6%;--kl:3.98%"><b>2</b></span><span class="tk" style="left:70.34%;top:84.81%;width:27.61%;height:5.23%"><b>3</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Ayat soal ditandai dan dibacakan qari. Teks lainnya ditutup.</span></li>
         <li><b class="no">2</b><span>Berapa ayat yang perlu Anda sambung. Mulailah membaca begitu qari selesai.</span></li>
@@ -412,9 +416,9 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Ringkasan</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/ringkasan.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/ringkasan.jpg" alt="Ringkasan" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.27%;top:22.44%;width:95.45%;height:5.21%;--kl:2.38%"><b>1</b></span><span class="tk luar" style="left:2.27%;top:52.94%;width:95.45%;height:6.17%;--kl:2.38%"><b>2</b></span><span class="tk kecil" style="left:87.73%;top:53.88%;width:9.09%;height:4.19%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/ringkasan.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/ringkasan.jpg" alt="Ringkasan" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.27%;top:22.44%;width:95.45%;height:5.05%;--kl:2.38%"><b>1</b></span><span class="tk luar" style="left:2.27%;top:52.79%;width:95.45%;height:6.17%;--kl:2.38%"><b>2</b></span><span class="tk kecil" style="left:87.73%;top:53.73%;width:9.09%;height:4.19%"><b>3</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span>Per <b>Surah</b>, per <b>Juz</b>, atau <b>Ayat mirip</b> yang pernah tertukar.</span></li>
+        <li><b class="no">1</b><span>Per <b>Surah</b>, per <b>Juz</b>, <b>Ayat mirip</b> yang pernah tertukar, atau <b>Murajaah</b>: halaman yang paling lama tidak disetor ada di atas.</span></li>
         <li><b class="no">2</b><span>Ketuk satu baris untuk membuka halamannya. Garis hijau = bagian yang sudah lancar.</span></li>
         <li><b class="no">3</b><span>Hapus peta hafalan surah itu saja.</span></li>
       </ol>
@@ -425,7 +429,7 @@
     <h2>⚙️ Pengaturan</h2>
     <div class="langkah">
       <div class="kepala"><h3>Pengaturan umum</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/id/opsi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/opsi.jpg" alt="Pengaturan umum" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>1</b></span><span class="tk" style="left:41.82%;top:14.23%;width:53.63%;height:6.89%"><b>2</b></span><span class="tk" style="left:41.82%;top:21.75%;width:53.63%;height:9.82%"><b>3</b></span><span class="tk" style="left:41.82%;top:32.2%;width:53.63%;height:4.4%"><b>4</b></span><span class="tk" style="left:41.82%;top:37.22%;width:53.63%;height:3.14%"><b>5</b></span><span class="tk" style="left:41.82%;top:40.98%;width:53.63%;height:6.03%"><b>6</b></span><span class="tk" style="left:41.82%;top:47.64%;width:53.63%;height:4.06%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/id/opsi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/id/opsi.jpg" alt="Pengaturan umum" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>1</b></span><span class="tk" style="left:41.82%;top:14.23%;width:53.63%;height:6.89%"><b>2</b></span><span class="tk" style="left:41.82%;top:21.75%;width:53.63%;height:9.82%"><b>3</b></span><span class="tk" style="left:41.82%;top:32.2%;width:53.63%;height:4.4%"><b>4</b></span><span class="tk" style="left:41.82%;top:37.22%;width:53.63%;height:3.14%"><b>5</b></span><span class="tk" style="left:41.82%;top:40.98%;width:53.63%;height:6.03%"><b>6</b></span><span class="tk" style="left:41.82%;top:47.64%;width:53.63%;height:4.06%"><b>7</b></span><span class="tk" style="left:41.82%;top:52.32%;width:53.63%;height:4.06%"><b>8</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Buka pengaturan.</span></li>
         <li><b class="no">2</b><span><b>Mubeena Pro</b>: berlangganan untuk semua surah.</span></li>
@@ -433,7 +437,8 @@
         <li><b class="no">4</b><span><b>Bahasa</b>: Indonesia atau English.</span></li>
         <li><b class="no">5</b><span><b>Mode malam</b>.</span></li>
         <li><b class="no">6</b><span><b>Cadangan data</b> (lihat di bawah).</span></li>
-        <li><b class="no">7</b><span><b>Panduan singkat</b>: tur pengenalan aplikasi.</span></li>
+        <li><b class="no">7</b><span><b>Penjelasan menu ini</b>: arti menu yang sedang dibuka.</span></li>
+        <li><b class="no">8</b><span><b>Panduan singkat</b>: pengenalan aplikasi.</span></li>
       </ol>
     </div>
     <div class="langkah">
@@ -450,9 +455,9 @@
     <h2>Arti warna</h2>
     <ul class="warna">
       <li><span class="tanda t-ok">benar</span> dibaca dengan benar</li>
-      <li><span class="tanda t-bad">salah</span> salah baca, terlewat, atau ada kata tambahan</li>
+      <li><span class="tanda t-bad">salah</span> salah baca, terlewat, ada kata tambahan, atau dituntun qari</li>
       <li><span class="tanda t-fix">dibetulkan</span> sempat salah, lalu dibetulkan sendiri</li>
-      <li><span class="tanda t-hint">dibantu</span> dibantu qari saat lupa atau sesudah salah</li>
+      <li><span class="tanda t-hint">dibantu</span> dibantu qari saat lupa</li>
       <li><span class="tanda t-lafal">catatan</span> pelafalan kurang jelas, tidak dihitung salah hafalan</li>
       <li><span class="tanda t-cek">garis abu-abu</span> AI sedang memeriksa ulang kata itu</li>
     </ul>
@@ -477,13 +482,14 @@
 <div data-lang="en">
   <h1>How to use Mubeena</h1>
   <p class="lead">Step by step, with pictures from the app. The orange numbers on each picture show what to tap; the list with the same numbers explains them.</p>
-  <ul class="isi"><li><a href="#en-mulai">Before you start</a></li><li><a href="#en-layar">The main screen</a></li><li><a href="#en-cari">Finding a surah, ayah or page</a></li><li><a href="#en-baca">Read</a></li><li><a href="#en-dengar">Listen</a></li><li><a href="#en-takrir">Repeat</a></li><li><a href="#en-setor">Check (the main feature)</a></li><li><a href="#en-tes">Continue-the-ayah test</a></li><li><a href="#en-mirip">Similar ayahs</a></li><li><a href="#en-peta">Memorization map</a></li><li><a href="#en-atur">Settings</a></li><li><a href="#en-warna">Colours</a></li><li><a href="#en-tips">Tips</a></li></ul>
+  <ul class="isi"><li><a href="#en-mulai">Before you start</a></li><li><a href="#en-layar">The main screen</a></li><li><a href="#en-cari">Finding a surah, ayah or page</a></li><li><a href="#en-baca">Read</a></li><li><a href="#en-dengar">Listen</a></li><li><a href="#en-takrir">Repeat</a></li><li><a href="#en-setor">Check (the main feature)</a></li><li><a href="#en-tes">Ayah continuation test</a></li><li><a href="#en-mirip">Similar ayahs</a></li><li><a href="#en-peta">Memorization map</a></li><li><a href="#en-atur">Settings</a></li><li><a href="#en-warna">Colours</a></li><li><a href="#en-tips">Tips</a></li></ul>
 
   <div class="kartu" id="en-mulai">
     <h2>Before you start</h2>
     <ul>
       <li>Open the app with an internet connection the first time: the Quran data is downloaded once, about 5 MB.</li>
       <li>Allow the <b>microphone</b> when asked. Your voice is checked by AI on your phone and is never sent anywhere. The AI works offline; the reciters' audio needs internet.</li>
+      <li>If Bluetooth earphones are connected, the app asks which mic to use. The reciter stays in your earphones.</li>
       <li>The numbers on the pictures show what to tap. Tap a picture to see it larger.</li>
     </ul>
   </div>
@@ -492,15 +498,14 @@
     <h2>📱 The main screen</h2>
     <div class="langkah">
       <div class="kepala"><h3>Get to know the buttons</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/utama.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/utama.jpg" alt="Get to know the buttons" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.05%;top:7.01%;width:64.54%;height:4.81%;--kl:3.17%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:77.05%;top:7.01%;width:10.45%;height:4.81%"><b>3</b></span><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>4</b></span><span class="tk" style="left:5.12%;top:13.08%;width:89.77%;height:70.79%"><b>5</b></span><span class="tk luar" style="left:2.05%;top:84.94%;width:89.54%;height:4.98%;--kl:2.29%"><b>6</b></span><span class="tk luar" style="left:0.5%;top:90.25%;width:99%;height:9.45%;--kl:0.51%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/utama.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/utama.jpg" alt="Get to know the buttons" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.05%;top:7.01%;width:75%;height:4.81%;--kl:2.73%"><b>1</b></span><span class="tk kecil" style="left:77.05%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>3</b></span><span class="tk" style="left:5.12%;top:13.08%;width:89.77%;height:70.79%"><b>4</b></span><span class="tk luar" style="left:2.05%;top:84.94%;width:89.54%;height:4.98%;--kl:2.29%"><b>5</b></span><span class="tk luar" style="left:0.5%;top:90.25%;width:99%;height:9.45%;--kl:0.51%"><b>6</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span><b>Search surah or juz</b>: type a surah name or pick a juz.</span></li>
-        <li><b class="no">2</b><span><b>Go to</b>: jump straight to an ayah or a page.</span></li>
-        <li><b class="no">3</b><span><b>Bookmarks</b>: the places you have marked.</span></li>
-        <li><b class="no">4</b><span><b>Settings</b>: language, dark mode, data backup, quick guide.</span></li>
-        <li><b class="no">5</b><span><b>Mushaf page</b>: swipe right for the next page, left for the previous one. Tap an ayah for its options.</span></li>
-        <li><b class="no">6</b><span><b>Button row</b> for the open tab. In Read: the bookmarks on this page.</span></li>
-        <li><b class="no">7</b><span><b>Five tabs</b>: Read, Listen, Repeat, Check, Map.</span></li>
+        <li><b class="no">1</b><span><b>Search</b>: surah, juz, ayah or page.</span></li>
+        <li><b class="no">2</b><span><b>Bookmarks</b>: the places you have marked.</span></li>
+        <li><b class="no">3</b><span><b>Settings</b>: language, dark mode, data backup, quick guide.</span></li>
+        <li><b class="no">4</b><span><b>Mushaf page</b>: swipe right for the next page, left for the previous one. Tap an ayah for its options.</span></li>
+        <li><b class="no">5</b><span><b>Button row</b> for the open tab. In Read: the bookmarks on this page.</span></li>
+        <li><b class="no">6</b><span><b>Five tabs</b>: Read, Listen, Repeat, Check, Map.</span></li>
       </ol>
     </div>
   </section>
@@ -509,16 +514,16 @@
     <h2>🔎 Finding a surah, ayah or page</h2>
     <div class="langkah">
       <div class="kepala"><h3>Search surah or juz</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/cari.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/cari.jpg" alt="Search surah or juz" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.36%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5%;top:19.58%;width:81.81%;height:5.21%;--kl:6.11%"><b>2</b></span><span class="tk luar" style="left:3.64%;top:24.79%;width:84.54%;height:6.61%;--kl:4.3%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/cari.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/cari.jpg" alt="Search surah or juz" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:19.43%;width:81.81%;height:5.36%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.21%;--kl:6.11%"><b>2</b></span><span class="tk luar" style="left:3.64%;top:25%;width:84.54%;height:6.61%;--kl:4.3%"><b>3</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span>Type the surah name or number. The list filters as you type.</span></li>
-        <li><b class="no">2</b><span>Choose <b>Surah</b> or <b>Juz</b>.</span></li>
+        <li><b class="no">1</b><span>Type the surah name or number, in any spelling (Yasin, Ya-Sin). You can also type "2:255" or "page 300".</span></li>
+        <li><b class="no">2</b><span>Choose <b>Surah</b>, <b>Juz</b>, <b>Ayah</b> or <b>Page</b>.</span></li>
         <li><b class="no">3</b><span>Tap the surah to open its page.</span></li>
       </ol>
     </div>
     <div class="langkah">
-      <div class="kepala"><h3>Go to an ayah or page</h3><p>Tap <b>Go to</b> (number 2 on the main screen).</p></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/pergi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/pergi.jpg" alt="Go to an ayah or page" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:14.09%;top:14.02%;width:81.81%;height:5.21%;--kl:17.22%"><b>1</b></span><span class="tk luar" style="left:14.55%;top:22.81%;width:59.54%;height:5.36%;--kl:24.43%"><b>2</b></span><span class="tk" style="left:14.55%;top:28.17%;width:59.54%;height:30.96%"><b>3</b></span><span class="tk" style="left:75%;top:22.81%;width:20.45%;height:5.36%"><b>4</b></span><span class="tk" style="left:75%;top:28.17%;width:20.45%;height:30.96%"><b>5</b></span><span class="tk luar" style="left:14.55%;top:59.76%;width:80.91%;height:5.23%;--kl:17.98%"><b>6</b></span></a></figure>
+      <div class="kepala"><h3>Go to an ayah or page</h3><p>In the same panel, the <b>Ayah</b> or <b>Page</b> tab.</p></div>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/pergi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/pergi.jpg" alt="Go to an ayah or page" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:5%;top:14.02%;width:81.81%;height:5.21%;--kl:6.11%"><b>1</b></span><span class="tk luar" style="left:5.46%;top:22.81%;width:59.54%;height:5.36%;--kl:9.17%"><b>2</b></span><span class="tk" style="left:5.46%;top:28.17%;width:59.54%;height:30.96%"><b>3</b></span><span class="tk" style="left:65.91%;top:22.81%;width:20.45%;height:5.36%"><b>4</b></span><span class="tk" style="left:65.91%;top:28.17%;width:20.45%;height:30.96%"><b>5</b></span><span class="tk luar" style="left:5.46%;top:59.76%;width:80.91%;height:5.23%;--kl:6.75%"><b>6</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Choose <b>Ayah</b> or <b>Page</b>.</span></li>
         <li><b class="no">2</b><span>Type the surah name, for example "baqarah".</span></li>
@@ -568,7 +573,7 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Choosing what to play</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/dengar-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/dengar-atur.jpg" alt="Choosing what to play" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:26.22%;width:93.63%;height:4.92%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:35.35%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:46.23%;width:93.63%;height:4.6%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:54.19%;width:93.63%;height:4.4%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:59.21%;width:93.63%;height:4.8%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:64.64%;width:93.63%;height:4.8%;--kl:3.39%"><b>6</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>7</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>8</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/dengar-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/dengar-atur.jpg" alt="Choosing what to play" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:25.93%;width:93.63%;height:4.92%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:35.35%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:46.23%;width:93.63%;height:4.6%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:54.19%;width:93.63%;height:4.4%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:59.21%;width:93.63%;height:4.8%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:64.64%;width:93.63%;height:4.8%;--kl:3.39%"><b>6</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>7</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>8</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Choose the <b>reciter</b>.</span></li>
         <li><b class="no">2</b><span><b>From</b> and <b>To</b>: tap the surah or ayah number to choose.</span></li>
@@ -627,7 +632,7 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Repeat settings</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/takrir-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/takrir-atur.jpg" alt="Repeat settings" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:20.43%;width:93.63%;height:10.25%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:31.31%;width:93.63%;height:4.6%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:39.27%;width:93.63%;height:4.8%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:44.7%;width:93.63%;height:4.8%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:50.13%;width:93.63%;height:4.6%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:55.36%;width:93.63%;height:8.59%;--kl:3.39%"><b>6</b></span><span class="tk" style="left:3.18%;top:64.57%;width:93.63%;height:25.51%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/takrir-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/takrir-atur.jpg" alt="Repeat settings" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:20.72%;width:93.63%;height:10.25%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:31.59%;width:93.63%;height:4.6%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:39.56%;width:93.63%;height:4.8%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:44.98%;width:93.63%;height:4.8%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:50.41%;width:93.63%;height:4.6%;--kl:3.39%"><b>5</b></span><span class="tk luar" style="left:3.18%;top:55.64%;width:93.63%;height:8.59%;--kl:3.39%"><b>6</b></span><span class="tk" style="left:3.18%;top:64.86%;width:93.63%;height:25.51%"><b>7</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>The ayahs to repeat: <b>From</b> and <b>To</b>.</span></li>
         <li><b class="no">2</b><span>Shortcuts: <b>This page</b> or <b>This surah</b>.</span></li>
@@ -673,12 +678,13 @@
     <p>Recite your memorization while the AI listens, like reciting to a teacher.</p>
     <div class="langkah">
       <div class="kepala"><h3>The Check tab</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/setor.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/setor.jpg" alt="The Check tab" loading="lazy" width="580" height="1260"><span class="tk" style="left:58.95%;top:90.46%;width:20.63%;height:5.83%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kecil" style="left:62.27%;top:84.81%;width:11.36%;height:5.23%"><b>3</b></span><span class="tk" style="left:74.09%;top:84.81%;width:23.87%;height:5.23%"><b>4</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/setor.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/setor.jpg" alt="The Check tab" loading="lazy" width="580" height="1260"><span class="tk" style="left:58.95%;top:90.46%;width:20.63%;height:5.83%"><b>1</b></span><span class="tk kecil" style="left:66.59%;top:7.01%;width:10.45%;height:4.81%"><b>2</b></span><span class="tk kiri" style="left:2.05%;top:84.81%;width:44.6%;height:5.23%"><b>3</b></span><span class="tk kecil" style="left:62.27%;top:84.81%;width:11.36%;height:5.23%"><b>4</b></span><span class="tk" style="left:74.09%;top:84.81%;width:23.87%;height:5.23%"><b>5</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Open the <b>Check</b> tab.</span></li>
         <li><b class="no">2</b><span><b>Memorization mode</b>: hides the text so you recite without looking.</span></li>
-        <li><b class="no">3</b><span>Check settings (reciter help, alert sound, Continue-the-ayah test).</span></li>
-        <li><b class="no">4</b><span>Tap <b>Start</b>, then recite clearly at a normal pace.</span></li>
+        <li><b class="no">3</b><span>The <b>Ayah continuation test</b> button (see below). It shows while you are not reciting.</span></li>
+        <li><b class="no">4</b><span>Check settings (reciter help, alert sound).</span></li>
+        <li><b class="no">5</b><span>Tap <b>Start</b>, then recite clearly at a normal pace.</span></li>
       </ol>
     </div>
     <div class="langkah">
@@ -743,33 +749,34 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Check settings</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/setor-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/setor-atur.jpg" alt="Check settings" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:42%;width:93.63%;height:4.43%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:51.89%;width:93.63%;height:4.8%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:61.49%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:68.81%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:76.13%;width:93.63%;height:6.7%;--kl:3.39%"><b>5</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/setor-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/setor-atur.jpg" alt="Check settings" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:89.55%;top:47.92%;width:7.27%;height:3.35%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:51.89%;width:93.63%;height:4.8%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:61.49%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:68.81%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:76.13%;width:93.63%;height:6.7%;--kl:3.39%"><b>5</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span><b>Continue-the-ayah test</b> (see below).</span></li>
+        <li><b class="no">1</b><span>The <b>?</b> button: a short explanation of this tab. It is in the other tabs' settings too.</span></li>
         <li><b class="no">2</b><span><b>Mistake alert sound</b>.</span></li>
         <li><b class="no">3</b><span><b>Help when stuck</b>: the reciter helps after 5 seconds of silence.</span></li>
         <li><b class="no">4</b><span><b>Guide after a mistake</b>: the reciter recites the correct words.</span></li>
-        <li><b class="no">5</b><span><b>Recited by the reciter</b>: Mishary Alafasy's voice (needs internet); without it only a soft cue.</span></li>
+        <li><b class="no">5</b><span><b>Read aloud by the reciter</b>: Mishary Alafasy's voice (needs internet); without it only a soft cue.</span></li>
       </ol>
     </div>
   </section>
 
   <section class="bagian" id="en-tes">
-    <h2>🧩 Continue-the-ayah test</h2>
+    <h2>🧩 Ayah continuation test</h2>
     <p>Like a hifz exam: the reciter recites a random ayah and you continue from memory.</p>
     <div class="langkah">
-      <div class="kepala"><h3>Setting up the test</h3><p>Open it from the Check settings › <b>Continue-the-ayah test</b>.</p></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/tes-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/tes-atur.jpg" alt="Setting up the test" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:52.07%;width:93.63%;height:12.35%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:65.04%;width:93.63%;height:4.4%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>4</b></span></a></figure>
+      <div class="kepala"><h3>Setting up the test</h3><p>Tap <b>Ayah continuation test</b> at the bottom of the Check tab.</p></div>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/tes-atur.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/tes-atur.jpg" alt="Setting up the test" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:3.18%;top:36.62%;width:93.63%;height:12.35%;--kl:3.39%"><b>1</b></span><span class="tk luar" style="left:3.18%;top:53.95%;width:93.63%;height:10.25%;--kl:3.39%"><b>2</b></span><span class="tk luar" style="left:3.18%;top:65.04%;width:93.63%;height:4.4%;--kl:3.39%"><b>3</b></span><span class="tk luar" style="left:3.18%;top:70.06%;width:93.63%;height:6.7%;--kl:3.39%"><b>4</b></span><span class="tk luar" style="left:3.18%;top:77.39%;width:93.63%;height:5.44%;--kl:3.39%"><b>5</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Ayahs from: <b>This page</b>, <b>This surah</b>, <b>This juz</b> or <b>Memorized</b>.</span></li>
-        <li><b class="no">2</b><span><b>Questions</b>: how many.</span></li>
-        <li><b class="no">3</b><span><b>Page transitions</b>: questions at the last ayah of a page, to practise moving to the next page.</span></li>
-        <li><b class="no">4</b><span>Tap <b>Start test</b>.</span></li>
+        <li><b class="no">2</b><span>Or choose your own range: <b>From</b> which surah and ayah, <b>To</b> which surah and ayah.</span></li>
+        <li><b class="no">3</b><span><b>Questions</b>: how many.</span></li>
+        <li><b class="no">4</b><span><b>Page transitions</b>: questions at the last ayah of a page, to practise moving to the next page.</span></li>
+        <li><b class="no">5</b><span>Tap <b>Start test</b>.</span></li>
       </ol>
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Answering</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/tes-soal.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/tes-soal.jpg" alt="Answering" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:77.03%;top:38.98%;width:11.76%;height:3.72%"><b>1</b></span><span class="tk luar" style="left:2.05%;top:87.32%;width:54.64%;height:2.6%;--kl:3.75%"><b>2</b></span><span class="tk" style="left:73.51%;top:84.81%;width:24.44%;height:5.23%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/tes-soal.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/tes-soal.jpg" alt="Answering" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:46.18%;top:47.8%;width:11.92%;height:3.72%"><b>1</b></span><span class="tk luar" style="left:2.05%;top:87.32%;width:54.64%;height:2.6%;--kl:3.75%"><b>2</b></span><span class="tk" style="left:73.51%;top:84.81%;width:24.44%;height:5.23%"><b>3</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>The question ayah is marked and recited. The rest of the text is hidden.</span></li>
         <li><b class="no">2</b><span>How many ayahs to continue. Start reciting when the reciter finishes.</span></li>
@@ -816,9 +823,9 @@
     </div>
     <div class="langkah">
       <div class="kepala"><h3>Summary</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/ringkasan.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/ringkasan.jpg" alt="Summary" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.27%;top:22.44%;width:95.45%;height:5.21%;--kl:2.38%"><b>1</b></span><span class="tk luar" style="left:2.27%;top:52.94%;width:95.45%;height:6.17%;--kl:2.38%"><b>2</b></span><span class="tk kecil" style="left:87.73%;top:53.88%;width:9.09%;height:4.19%"><b>3</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/ringkasan.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/ringkasan.jpg" alt="Summary" loading="lazy" width="580" height="1260"><span class="tk luar" style="left:2.27%;top:22.44%;width:95.45%;height:5.05%;--kl:2.38%"><b>1</b></span><span class="tk luar" style="left:2.27%;top:52.79%;width:95.45%;height:6.17%;--kl:2.38%"><b>2</b></span><span class="tk kecil" style="left:87.73%;top:53.73%;width:9.09%;height:4.19%"><b>3</b></span></a></figure>
       <ol class="nomor">
-        <li><b class="no">1</b><span>Per <b>Surah</b>, per <b>Juz</b>, or <b>Similar ayahs</b> you have mixed up.</span></li>
+        <li><b class="no">1</b><span>Per <b>Surah</b>, per <b>Juz</b>, <b>Similar ayahs</b> you have mixed up, or <b>Review</b>: the pages you have not recited for the longest time come first.</span></li>
         <li><b class="no">2</b><span>Tap a line to open its page. The green bar = the part that is fluent.</span></li>
         <li><b class="no">3</b><span>Delete the map of that surah only.</span></li>
       </ol>
@@ -829,7 +836,7 @@
     <h2>⚙️ Settings</h2>
     <div class="langkah">
       <div class="kepala"><h3>General settings</h3></div>
-      <figure class="hp"><a class="layar" href="aset/panduan/en/opsi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/opsi.jpg" alt="General settings" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>1</b></span><span class="tk" style="left:41.82%;top:14.23%;width:53.63%;height:6.89%"><b>2</b></span><span class="tk" style="left:41.82%;top:21.75%;width:53.63%;height:9.82%"><b>3</b></span><span class="tk" style="left:41.82%;top:32.2%;width:53.63%;height:4.4%"><b>4</b></span><span class="tk" style="left:41.82%;top:37.22%;width:53.63%;height:3.14%"><b>5</b></span><span class="tk" style="left:41.82%;top:40.98%;width:53.63%;height:6.03%"><b>6</b></span><span class="tk" style="left:41.82%;top:47.64%;width:53.63%;height:4.06%"><b>7</b></span></a></figure>
+      <figure class="hp"><a class="layar" href="aset/panduan/en/opsi.jpg" target="_blank" rel="noopener"><img src="aset/panduan/en/opsi.jpg" alt="General settings" loading="lazy" width="580" height="1260"><span class="tk kecil" style="left:87.5%;top:7.01%;width:10.45%;height:4.81%"><b>1</b></span><span class="tk" style="left:41.82%;top:14.23%;width:53.63%;height:6.89%"><b>2</b></span><span class="tk" style="left:41.82%;top:21.75%;width:53.63%;height:9.82%"><b>3</b></span><span class="tk" style="left:41.82%;top:32.2%;width:53.63%;height:4.4%"><b>4</b></span><span class="tk" style="left:41.82%;top:37.22%;width:53.63%;height:3.14%"><b>5</b></span><span class="tk" style="left:41.82%;top:40.98%;width:53.63%;height:6.03%"><b>6</b></span><span class="tk" style="left:41.82%;top:47.64%;width:53.63%;height:4.06%"><b>7</b></span><span class="tk" style="left:41.82%;top:52.32%;width:53.63%;height:4.06%"><b>8</b></span></a></figure>
       <ol class="nomor">
         <li><b class="no">1</b><span>Open settings.</span></li>
         <li><b class="no">2</b><span><b>Mubeena Pro</b>: the subscription for every surah.</span></li>
@@ -837,7 +844,8 @@
         <li><b class="no">4</b><span><b>Language</b>: Indonesian or English.</span></li>
         <li><b class="no">5</b><span><b>Dark mode</b>.</span></li>
         <li><b class="no">6</b><span><b>Data backup</b> (see below).</span></li>
-        <li><b class="no">7</b><span><b>Quick guide</b>: the app's introduction tour.</span></li>
+        <li><b class="no">7</b><span><b>About this tab</b>: what the open tab is for.</span></li>
+        <li><b class="no">8</b><span><b>Quick guide</b>: the app's introduction.</span></li>
       </ol>
     </div>
     <div class="langkah">
@@ -854,9 +862,9 @@
     <h2>What the colours mean</h2>
     <ul class="warna">
       <li><span class="tanda t-ok">correct</span> recited correctly</li>
-      <li><span class="tanda t-bad">wrong</span> misread, skipped, or an added word</li>
+      <li><span class="tanda t-bad">wrong</span> misread, skipped, an added word, or guided by the reciter</li>
       <li><span class="tanda t-fix">corrected</span> a mistake you corrected yourself</li>
-      <li><span class="tanda t-hint">helped</span> the reciter helped when you were stuck or after a mistake</li>
+      <li><span class="tanda t-hint">helped</span> the reciter helped when you were stuck</li>
       <li><span class="tanda t-lafal">note</span> pronunciation not clear, not counted as a memorization mistake</li>
       <li><span class="tanda t-cek">grey underline</span> the AI is double-checking that word</li>
     </ul>
